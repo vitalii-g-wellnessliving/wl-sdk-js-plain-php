@@ -18,12 +18,12 @@
       <script src=\"sdk/Config/SdkConfigMixin.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/AuthorizationSignature.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/ModelAbstract.js\" type=\"text/javascript\"></script>
-      <script src=\"sdk/sha256.min.js\" type=\"text/javascript\"></script>
+      <script src=\"sdk/sha256.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/sha3.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/SyncError.js\" type=\"text/javascript\"></script>
-      <script src=\"sdk/model/Core/Passport/Login/Enter/EnterModel.js\" type=\"text/javascript\"></script>
-      <script src=\"sdk/model/Core/Passport/Login/Enter/NotepadModel.js\" type=\"text/javascript\"></script>
-      <script src=\"sdk/model/Core/Request/Api/KeySessionModel.js\" type=\"text/javascript\"></script>
+      <script src=\"sdk/Core/Passport/Login/Enter/EnterModel.js\" type=\"text/javascript\"></script>
+      <script src=\"sdk/Core/Passport/Login/Enter/NotepadModel.js\" type=\"text/javascript\"></script>
+      <script src=\"sdk/Core/Request/Api/KeySessionModel.js\" type=\"text/javascript\"></script>
       <script type=\"text/javascript\">
       var notepad = new Core_Passport_Login_Enter_NotepadModel();
         notepad.get().done(function()
