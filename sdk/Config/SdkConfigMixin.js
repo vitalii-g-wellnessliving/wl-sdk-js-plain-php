@@ -53,7 +53,7 @@ WlSdk_Config_Mixin.csrfCode = function(s_session_key)
   if(WLSDK_CSRF_CODE_VARIABLE && s_session_key.substr(0,5) === WLSDK_CSRF_CODE_VARIABLE.substr(-5,5))
     return o_defer.resolve(WLSDK_CSRF_CODE_VARIABLE).promise();
 
-  var url = 'https://domain.com/csrfCode.php'; // URL to get CSRF code on your server.
+  var url = '/secret.php'; // URL to get CSRF code on your server.
   url = WlSdk_Core_Url.variable(url,{
     's_session_key': s_session_key
   });

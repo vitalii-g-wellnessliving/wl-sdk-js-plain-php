@@ -6,6 +6,7 @@ echo "
     <html>
       <script type=\"text/javascript\">
         var SDK_CSRF_CODE = '$s_csrf';
+        var WLSDK_CSRF_CODE_VARIABLE = 'WLSDK_CSRF_CODE_VARIABLE';
       </script>
       <script src=\"sdk/Core/Js/Php/get_class.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/Core/Js/Php/empty.js\" type=\"text/javascript\"></script>
@@ -16,7 +17,6 @@ echo "
       <script src=\"sdk/AssertException.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/Config/ConfigRegionSid.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/Config/ConfigAbstractMixin.js\" type=\"text/javascript\"></script>
-      <script src=\"sdk/Config/SdkConfigMixin.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/AuthorizationSignature.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/ModelAbstract.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/sha256.js\" type=\"text/javascript\"></script>
@@ -25,6 +25,9 @@ echo "
       <script src=\"sdk/Core/Passport/Login/Enter/EnterModel.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/Core/Passport/Login/Enter/NotepadModel.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/Core/Request/Api/KeySessionModel.js\" type=\"text/javascript\"></script>
+      
+      <script src=\"sdk/Config/SdkConfigMixin.js\" type=\"text/javascript\"></script>
+      
       <script type=\"text/javascript\">
       var notepad = new Core_Passport_Login_Enter_NotepadModel();
         notepad.get().done(function()
