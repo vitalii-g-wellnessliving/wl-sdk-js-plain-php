@@ -2,11 +2,13 @@
 require 'csrf.php';
 
 $s_csrf = csrf();
+$sdk_app_id = getenv('SDK_APP_ID');
+
 echo "
     <html>
       <script type=\"text/javascript\">
-        var SDK_CSRF_CODE = '$s_csrf';
-        var WLSDK_CSRF_CODE_VARIABLE = 'WLSDK_CSRF_CODE_VARIABLE';
+        const SDK_CSRF_CODE = '$s_csrf';
+        const SDK_APP_ID = '$sdk_app_id';
       </script>
       <script src=\"sdk/Core/Js/Php/get_class.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/Core/Js/Php/empty.js\" type=\"text/javascript\"></script>
