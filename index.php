@@ -26,7 +26,7 @@ echo "
       <script src=\"sdk/Core/Passport/Login/Enter/NotepadModel.js\" type=\"text/javascript\"></script>
       <script src=\"sdk/Core/Request/Api/KeySessionModel.js\" type=\"text/javascript\"></script>
       
-      <script src=\"sdk/Config/SdkConfigMixin.js\" type=\"text/javascript\"></script>
+      <script src=\"/SdkConfigMixin.js\" type=\"text/javascript\"></script>
       
       <script type=\"text/javascript\">
       var notepad = new Core_Passport_Login_Enter_NotepadModel();
