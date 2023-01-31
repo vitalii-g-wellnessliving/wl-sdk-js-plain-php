@@ -1,8 +1,10 @@
 <?php
-require 'csrf.php';
+require __DIR__ . '/_init.php';
 
-$s_csrf = csrf();
-$sdk_app_id = getenv('SDK_APP_ID');
+use Src\Csrf;
+
+$s_csrf = (new Csrf())->get();
+$sdk_app_id = SDK_APP_ID;
 
 echo "
     <html>
@@ -58,5 +60,4 @@ echo "
       </script>
     </html>
   ";
-?>
 

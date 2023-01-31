@@ -1,0 +1,29 @@
+{
+    "name": "vital/wl-sdk-js-plain-php",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        },
+        "classmap": [
+            "vendor/wellnessliving/wl-sdk/WellnessLiving"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Vitalii Goncharov",
+            "email": "1c.audit@gmail.com"
+        }
+    ],
+    "require": {
+        "wellnessliving/wl-sdk": "dev-master",
+        "vlucas/phpdotenv": "^5.5@dev"
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "name": "wellnessliving/wl-sdk",
+            "type": "vcs",
+            "url": "https://github.com/wellnessliving/wl-sdk"
+        }
+    ]
+}
