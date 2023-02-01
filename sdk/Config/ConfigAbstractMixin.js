@@ -350,8 +350,8 @@ WlSdk_Config_MixinAbstract.requestSuccess = function(a_result,s_request,url_requ
  */
 WlSdk_Config_MixinAbstract.sessionKey = function()
 {
-  var s_session_id = window.localStorage.getItem('s_session_id');
-  if(s_session_id === null)
+  var s_session_id = WlSdk_Config_MixinAbstract.getKey('s_session_id');
+  if(!s_session_id)
   {
     var s_symbols="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
     s_session_id = '';
@@ -361,8 +361,37 @@ WlSdk_Config_MixinAbstract.sessionKey = function()
       s_session_id=s_session_id+s_symbols.charAt(c);
     }
 
-    window.localStorage.setItem('s_session_id',s_session_id);
+    WlSdk_Config_MixinAbstract.setKey('s_session_id',s_session_id);
   }
 
   return s_session_id;
+
+};
+
+/**
+ * Returns value, depending on from cookie is enabled or not.
+ *
+ * @param {string} name key name.
+ * @returns {string} key value.
+ */
+WlSdk_Config_MixinAbstract.getKey = function(name)
+{
+    return  navigator.cookieEnabled  ? window.localStorage.getItem(name) : window[name];
+};
+
+/**
+ * Sets value, depending on from cookie is enabled or not.
+ *
+ * @param {string} name key name.
+ * @param {string} value key value.
+ * @returns {string} key value.
+ */
+WlSdk_Config_MixinAbstract.setKey = function(name, value)
+{
+    if (navigator.cookieEnabled)
+    {
+        window.localStorage.setItem(name, value);
+    } else {
+        window[name] = value;
+    }
 };
