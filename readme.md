@@ -1,3 +1,12 @@
+Clone the project
+-----------------
+
+Clone the project with `--recurse-submodules` option to clone the submodules as well.
+
+```bash
+git clone --recurse-submodules https://github.com/vitalii-g-wellnessliving/wl-sdk-js-plain-php.git
+```
+
 Install dependencies
 --------------------
 
