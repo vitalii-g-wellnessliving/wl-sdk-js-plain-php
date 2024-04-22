@@ -25,5 +25,10 @@
             "type": "vcs",
             "url": "https://github.com/wellnessliving/wl-sdk"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }
