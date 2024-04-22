@@ -1,0 +1,4 @@
+[submodule "wl-sdk-js"]
+	path = wl-sdk-js
+	url = https://github.com/wellnessliving/wl-sdk-js.git
+	branch = stable
